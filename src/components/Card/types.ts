@@ -15,6 +15,7 @@ export type CardTheme = {
   boxShadowWarning: string;
   cardHeaderBackground: string;
   dropShadow: string;
+  border: string;
 };
 
 export interface CardProps extends SpaceProps, HTMLAttributes<HTMLDivElement> {

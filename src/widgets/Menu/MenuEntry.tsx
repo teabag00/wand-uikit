@@ -5,6 +5,7 @@ export interface Props {
   secondary?: boolean;
   isActive?: boolean;
   theme: DefaultTheme;
+  disabled?: boolean;
 }
 
 const rainbowAnimation = keyframes`
@@ -44,10 +45,15 @@ const MenuEntry = styled.div<Props>`
   svg {
     fill: ${({ theme }) => theme.colors.textSubtle};
   }
-
+  
   &:hover {
     background-color: ${({ theme }) => theme.colors.tertiary};
   }
+  
+  ${props => props.disabled ? `
+    pointer-events: none;
+    opacity: .25;
+` : ``}
 
   // Safari fix
   flex-shrink: 0;
