@@ -50,15 +50,15 @@ export const links = [
       // },
       {
         label: "Github",
-        href: "https://github.com/frenchiedefi/",
+        href: "https://github.com/frenchfriesdefi/",
       },
       {
         label: "Docs",
-        href: "https://frenchie-defi.gitbook.io/frenchie-puppy-finance/",
+        href: "https://frenchfries-defi.gitbook.io/frenchfries-puppy-finance/",
       },
       {
         label: "Blog",
-        href: "https://frenchie-defi.medium.com/",
+        href: "https://frenchfries-defi.medium.com/",
       },
     ],
   },
@@ -68,12 +68,12 @@ export const socials = [
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href: "https://t.me/frenchiedefi",
+    href: "https://t.me/frenchfriesdefi",
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/FrenchieDefi",
+    href: "https://twitter.com/FrenchFriesDefi",
   },
 ];
 
