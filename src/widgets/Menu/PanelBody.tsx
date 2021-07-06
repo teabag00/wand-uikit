@@ -28,7 +28,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
   // Close the menu when a user clicks a link on mobile
   const handleClick = isMobile ? () => pushNav(false) : undefined;
 
-  return (
+  return ( <>
     <Container>
       {links.map((entry) => {
         const Icon = Icons[entry.icon];
@@ -65,6 +65,9 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
         );
       })}
     </Container>
+      {/* eslint-disable-next-line jsx-a11y/alt-text,jsx-a11y/control-has-associated-label */}
+      {/* <a href="https://rugdoc.io/project/pfre-finance/"><img src="/images/rugdoc-review.png" /></a> */}
+    </>
   );
 };
 

@@ -6,6 +6,7 @@ import { ToggleTheme } from "../components/Toggle/types";
 import { NavTheme } from "../widgets/Menu/types";
 import { ModalTheme } from "../widgets/Modal/types";
 import { Colors, Breakpoints, MediaQueries, Spacing, Shadows, Radii, ZIndices } from "./types";
+import { TooltipTheme } from "../components/Tooltip/types";
 export interface PancakeTheme {
     siteWidth: number;
     isDark: boolean;
@@ -17,6 +18,7 @@ export interface PancakeTheme {
     modal: ModalTheme;
     radio: RadioTheme;
     toggle: ToggleTheme;
+    tooltip: TooltipTheme;
     breakpoints: Breakpoints;
     mediaQueries: MediaQueries;
     spacing: Spacing;

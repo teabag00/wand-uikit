@@ -6,6 +6,7 @@ import { light as lightRadio } from "../components/Radio/theme";
 import { light as lightToggle } from "../components/Toggle/theme";
 import { light as lightNav } from "../widgets/Menu/theme";
 import { light as lightModal } from "../widgets/Modal/theme";
+import { light as lightTooltip } from "../components/Tooltip/theme";
 import base from "./base";
 import { lightColors } from "./colors";
 
@@ -20,6 +21,7 @@ const lightTheme: DefaultTheme = {
   nav: lightNav,
   modal: lightModal,
   radio: lightRadio,
+  tooltip: lightTooltip,
 };
 
 export default lightTheme;

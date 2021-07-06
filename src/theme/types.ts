@@ -48,6 +48,7 @@ export type Colors = {
   text: string;
   textDisabled: string;
   textSubtle: string;
+  backgroundAlt: string;
   borderColor: string;
   card: string;
 

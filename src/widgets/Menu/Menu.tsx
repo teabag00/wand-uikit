@@ -47,6 +47,10 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   ${({ theme }) => theme.mediaQueries.nav} {
     margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
   }
+  background: url("images/pfre/main-bk.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 `;
 
 const MobileOnlyOverlay = styled(Overlay)`
@@ -71,6 +75,7 @@ const Menu: React.FC<NavProps> = ({
   links,
   priceLink,
   profile,
+  customUserSection,
   children,
 }) => {
   const { isXl } = useMatchBreakpoints();
@@ -120,6 +125,9 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
+        {
+          customUserSection
+        }
         <Flex>
           <UserBlock account={account} login={login} logout={logout} />
           {profile && <Avatar profile={profile} />}
