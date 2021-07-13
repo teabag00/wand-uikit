@@ -72,6 +72,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.9.2",
+    "@rollup/plugin-url": "^6.0.0",
     "@types/lodash": "^4.14.162",
     "@types/styled-system": "^5.1.10",
     "lodash": "^4.17.20",

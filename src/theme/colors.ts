@@ -24,6 +24,7 @@ export const lightColors: Colors = {
   invertedContrast: "#FFFFFF",
   input: "#eeeaf4",
   tertiary: "#EFF4F5",
+  inputSecondary: "#d7caec",
   text: "#5a5a5a",
   textDisabled: "#BDC2C4",
   textSubtle: "#676767",
@@ -31,6 +32,8 @@ export const lightColors: Colors = {
   card: "#fffaf0",
   gradients: {
     bubblegum: "linear-gradient(139.73deg,#f7e9cf 0%,#b7b7b7 100%)",
+    cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
+
   },
 };
 
@@ -45,6 +48,7 @@ export const darkColors: Colors = {
   invertedContrast: "#191326",
   input: "#483f5a",
   primaryDark: "#0098A1",
+  inputSecondary: "#262130",
   tertiary: "#353547",
   text: "#fcf2e2",
   textDisabled: "#666171",
@@ -53,5 +57,6 @@ export const darkColors: Colors = {
   card: "#27262c",
   gradients: {
     bubblegum: "linear-gradient(139.73deg,#6d6d6d 0%,#343135 100%)",
+    cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
   },
 };

@@ -68,12 +68,12 @@ export const socials = [
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href: "https://t.me/pfredefi",
+    href: "https://t.me/polyfrenchiedefi",
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/polyFrenchieDefi",
+    href: "https://twitter.com/polyfrenchie",
   },
 ];
 

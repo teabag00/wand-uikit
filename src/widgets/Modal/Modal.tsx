@@ -1,17 +1,11 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
 import Heading from "../../components/Heading/Heading";
 import Flex from "../../components/Flex/Flex";
 import { ArrowBackIcon, CloseIcon } from "../../components/Svg";
 import { IconButton } from "../../components/Button";
-import { InjectedProps } from "./types";
-
-interface Props extends InjectedProps {
-  title: string;
-  hideCloseButton?: boolean;
-  onBack?: () => void;
-  bodyPadding?: string;
-}
+import { ModalProps } from "./types";
+import getThemeValue from "../../util/getThemeValue";
 
 const StyledModal = styled.div`
   background: ${({ theme }) => theme.modal.background};
@@ -28,7 +22,7 @@ const StyledModal = styled.div`
   }
 `;
 
-const ModalHeader = styled.div`
+const ModalHeader = styled.div<{ background?: string }>`
   display: flex;
   align-items: center;
   border-bottom: 1px solid #e9eaeb;
@@ -41,16 +35,18 @@ const ModalTitle = styled(Flex)`
   flex: 1;
 `;
 
-const Modal: React.FC<Props> = ({
-  title,
-  onDismiss,
-  onBack,
-  children,
-  hideCloseButton = false,
-  bodyPadding = "24px",
-}) => (
-  <StyledModal>
-    <ModalHeader>
+const Modal: React.FC<ModalProps> = ({
+                                       title,
+                                       onDismiss,
+                                       onBack,
+                                       children,
+                                       hideCloseButton = false,
+                                       headerBackground = "transparent",
+                                       bodyPadding = "24px"
+                                     }) => {
+  const theme = useTheme();
+  return <StyledModal>
+    <ModalHeader background={getThemeValue(`colors.${headerBackground}`, headerBackground)(theme)}>
       <ModalTitle>
         {onBack && (
           <IconButton variant="text" onClick={onBack} area-label="go back" mr="8px">
@@ -69,6 +65,6 @@ const Modal: React.FC<Props> = ({
       {children}
     </Flex>
   </StyledModal>
-);
+};
 
 export default Modal;

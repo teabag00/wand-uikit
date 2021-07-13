@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import Button from "../../components/Button/Button";
 import Text from "../../components/Text/Text";
 import { localStorageKey } from "./config";
@@ -11,11 +12,14 @@ interface Props {
   mb: string;
 }
 
+const StyledButton = styled(Button)`
+  width:100%;
+`
+
 const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss, mb }) => {
   const { title, icon: Icon } = walletConfig;
   return (
-    <Button
-      fullWidth
+    <StyledButton
       variant="tertiary"
       onClick={() => {
         login(walletConfig.connectorId);
@@ -30,7 +34,7 @@ const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss, mb }) => 
         {title}
       </Text>
       <Icon width="32px" />
-    </Button>
+    </StyledButton>
   );
 };
 
