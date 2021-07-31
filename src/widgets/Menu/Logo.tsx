@@ -43,16 +43,16 @@ const Title = styled.h1`
   /* Create the gradient. */
    background-image: linear-gradient(
         45deg,
-        #689f38 16.666%, 
-        #558b2f 16.666%, 
-        #33691e 33.333%, 
-        #388e3c 33.333%, 
-        #2e7d32 50%, 
-        #1b5e20 50%, 
-        #76ff03 66.666%, 
-        #32cb00 66.666%, 
-        #00e676 83.333%, 
-        #00b248 83.333%);
+        #ffca28 16.666%,
+        #fffd61 16.666%,
+        #c79a00 33.333%,
+        #ffc107 33.333%,
+        #fff350 50%,
+        #c79100 50%,
+        #ffa000 66.666%,
+        #ffd149 66.666%,
+        #c67100 83.333%,
+        #ff6f00 83.333%);
   
   /* Set the background size and repeat properties. */
   background-size: 100%;
@@ -109,7 +109,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       {/* <LogoIcon className="mobile-icon" /> */}
       {/* <LogoWithText className="desktop-icon" isDark={isDark} /> */}
       <Flex className="desktop-icon">
-        <Title>POLYFRENCHIE</Title>
+        <Title>TEABAGS</Title>
       </Flex>
     </>
   );

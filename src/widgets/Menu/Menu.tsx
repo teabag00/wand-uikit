@@ -47,10 +47,7 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   ${({ theme }) => theme.mediaQueries.nav} {
     margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
   }
-  background: url("images/pfre/main-bk.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+ background: transparent;
 `;
 
 const MobileOnlyOverlay = styled(Overlay)`
