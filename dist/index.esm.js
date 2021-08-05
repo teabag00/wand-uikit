@@ -2462,10 +2462,10 @@ var useParticleBurst = function (options) {
 
 var baseColors = {
     failure: "#ED4B9E",
-    primary: "#ffe082",
-    primaryBright: "#ffffb3",
-    primaryDark: "#caae53",
-    secondary: "#ffea00",
+    primary: "#ffc107",
+    primaryBright: "#fff350",
+    primaryDark: "#c79100",
+    secondary: "#f57c00",
     success: "#31D0AA",
     warning: "#FFB237",
 };
@@ -2476,7 +2476,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { ba
         bubblegum: "linear-gradient(139.73deg,#f7e9cf 0%,#b7b7b7 100%)",
         cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#c8a415", background: "#343135", backgroundAlt: "#27262c", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", inputSecondary: "#262130", tertiary: "#353547", text: "#fcf2e2", textDisabled: "#666171", textSubtle: "#d4d1c4", borderColor: "#524B63", card: "#27262c", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#f57c00", background: "#343135", backgroundAlt: "#27262c", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", inputSecondary: "#262130", tertiary: "#353547", text: "#fcf2e2", textDisabled: "#666171", textSubtle: "#d4d1c4", borderColor: "#524B63", card: "#27262c", gradients: {
         bubblegum: "linear-gradient(139.73deg,#6d6d6d 0%,#343135 100%)",
         cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
     } });
