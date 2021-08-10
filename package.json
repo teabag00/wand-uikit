@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/teabagdefi/teabagdefi-uikit",
+  "repository": "https://github.com/wanddefi/wanddefi-uikit",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",

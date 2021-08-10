@@ -50,7 +50,7 @@ export const links = [
       // },
       {
         label: "Github",
-        href: "https://github.com/teabagdefi/",
+        href: "https://github.com/wanddefi/",
       },
       {
         label: "Docs",
@@ -68,12 +68,12 @@ export const socials = [
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href: "https://t.me/teabagsfinance",
+    href: "https://t.me/wandefi",
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/teabagsdefi",
+    href: "https://twitter.com/Wandefi_",
   },
 ];
 

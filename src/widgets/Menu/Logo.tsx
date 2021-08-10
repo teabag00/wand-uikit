@@ -36,69 +36,24 @@ const Title = styled.h1`
   font-size: 16px;
   font-family: 'Kanit';
 
+  color: #fff;
+  text-shadow:
+          0 0 5px #dd33fa
 
-  /* Fallback: Set a background color. */
-  background-color: #CA4246;
-  
-  /* Create the gradient. */
-   background-image: linear-gradient(
-        45deg,
-        #ffca28 16.666%,
-        #fffd61 16.666%,
-        #c79a00 33.333%,
-        #ffc107 33.333%,
-        #fff350 50%,
-        #c79100 50%,
-        #ffa000 66.666%,
-        #ffd149 66.666%,
-        #c67100 83.333%,
-        #ff6f00 83.333%);
-  
-  /* Set the background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
+          ,
+          0 0 10px #dd33fa
 
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  
-  /* Animate the text when loading the element. */
-    /* This animates it on page load and when hovering out. */
-    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+          ,
+          0 0 20px #dd33fa
 
-&:hover{
-    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
-}
+          ,
+          0 0 40px #d500f9,
+          0 0 80px #d500f9,
+          0 0 90px #d500f9,
+          0 0 100px #d500f9,
+          0 0 150px #d500f9;
 
-
-/* Move the background and make it smaller. */
-/* Animation shown when entering the page and after the hover animation. */
-@keyframes rainbow-text-simple-animation-rev {
-    0% {
-        background-size: 650%;
-    }
-    40% {
-        background-size: 650%;
-    }
-    100% {
-        background-size: 100%;
-    }
-}
-
-/* Move the background and make it larger. */
-/* Animation shown when hovering over the text. */
-@keyframes rainbow-text-simple-animation {
-    0% {
-        background-size: 100%;
-    }
-    80% {
-        background-size: 650%;
-    }
-    100% {
-        background-size: 650%;
-    }
-}
+ 
 
 `
 
@@ -109,7 +64,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       {/* <LogoIcon className="mobile-icon" /> */}
       {/* <LogoWithText className="desktop-icon" isDark={isDark} /> */}
       <Flex className="desktop-icon">
-        <Title>TEABAGS</Title>
+        <Title>WAND</Title>
       </Flex>
     </>
   );

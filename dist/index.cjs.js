@@ -748,7 +748,7 @@ var Icon$M = function (props) {
 
 var Icon$N = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 90 90" }, props),
-        React__default['default'].createElement("image", { width: 90, height: 90, href: "/images/teabag/9.png" })));
+        React__default['default'].createElement("image", { width: 90, height: 90, href: "/images/wand/9.png" })));
 };
 
 var Icon$O = function (props) {
@@ -1776,7 +1776,7 @@ var Progress = function (_a) {
 var rotate$1 = styled.keyframes(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
 var SpinnerIcon = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
-        React__default['default'].createElement("image", { width: "96", height: "96", href: "/images/teabag/9.png" })));
+        React__default['default'].createElement("image", { width: "96", height: "96", href: "/images/wand/9.png" })));
 };
 var Container$1 = styled__default['default'].div(templateObject_2$7 || (templateObject_2$7 = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
 var RotatingPancakeIcon = styled__default['default'](SpinnerIcon)(templateObject_3$2 || (templateObject_3$2 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"])), rotate$1);
@@ -2476,12 +2476,12 @@ var useParticleBurst = function (options) {
 
 var baseColors = {
     failure: "#ED4B9E",
-    primary: "#ffc107",
-    primaryBright: "#fff350",
-    primaryDark: "#c79100",
-    secondary: "#f57c00",
+    primary: "#dd33fa",
+    primaryBright: "#d500f9",
+    primaryDark: "#9500ae",
+    secondary: "#6d1b7b",
     success: "#31D0AA",
-    warning: "#FFB237",
+    warning: "#4791db",
 };
 var brandColors = {
     binance: "#F0B90B",
@@ -2490,7 +2490,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { ba
         bubblegum: "linear-gradient(139.73deg,#f7e9cf 0%,#b7b7b7 100%)",
         cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#f57c00", background: "#343135", backgroundAlt: "#27262c", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", inputSecondary: "#262130", tertiary: "#353547", text: "#fcf2e2", textDisabled: "#666171", textSubtle: "#d4d1c4", borderColor: "#524B63", card: "#27262c", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#ED4B9E", background: "#343135", backgroundAlt: "#27262c", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", inputSecondary: "#262130", tertiary: "#353547", text: "#fcf2e2", textDisabled: "#666171", textSubtle: "#d4d1c4", borderColor: "#524B63", card: "rgba(0,0,0,0.6)", gradients: {
         bubblegum: "linear-gradient(139.73deg,#6d6d6d 0%,#343135 100%)",
         cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
     } });
@@ -2891,7 +2891,7 @@ var Icon$1n = function (props) {
 var Logo = function (_a) {
     var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 205 26" }, props),
-        React__default['default'].createElement("image", { width: "205", height: "26", href: isDark ? '/images/teabag/LogoTextNewDark.png' : '/images/teabag/LogoTextNewWhite.png' })));
+        React__default['default'].createElement("image", { width: "205", height: "26", href: isDark ? '/images/wand/LogoTextNewDark.png' : '/images/wand/LogoTextNewWhite.png' })));
 };
 
 var Icon$1o = function (props) {
@@ -3112,13 +3112,13 @@ var StyledLink$1 = styled__default['default'](reactRouterDom.Link)(templateObjec
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
-var Title = styled__default['default'].h1(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  font-size: 16px;\n  font-family: 'Kanit';\n\n\n  /* Fallback: Set a background color. */\n  background-color: #CA4246;\n  \n  /* Create the gradient. */\n   background-image: linear-gradient(\n        45deg,\n        #ffca28 16.666%,\n        #fffd61 16.666%,\n        #c79a00 33.333%,\n        #ffc107 33.333%,\n        #fff350 50%,\n        #c79100 50%,\n        #ffa000 66.666%,\n        #ffd149 66.666%,\n        #c67100 83.333%,\n        #ff6f00 83.333%);\n  \n  /* Set the background size and repeat properties. */\n  background-size: 100%;\n  background-repeat: repeat;\n\n  /* Use the text as a mask for the background. */\n  /* This will show the gradient as a text color rather than element bg. */\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent; \n  \n  /* Animate the text when loading the element. */\n    /* This animates it on page load and when hovering out. */\n    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;\n\n&:hover{\n    animation: rainbow-text-simple-animation 0.5s ease-in forwards;\n}\n\n\n/* Move the background and make it smaller. */\n/* Animation shown when entering the page and after the hover animation. */\n@keyframes rainbow-text-simple-animation-rev {\n    0% {\n        background-size: 650%;\n    }\n    40% {\n        background-size: 650%;\n    }\n    100% {\n        background-size: 100%;\n    }\n}\n\n/* Move the background and make it larger. */\n/* Animation shown when hovering over the text. */\n@keyframes rainbow-text-simple-animation {\n    0% {\n        background-size: 100%;\n    }\n    80% {\n        background-size: 650%;\n    }\n    100% {\n        background-size: 650%;\n    }\n}\n\n"], ["\n  font-size: 16px;\n  font-family: 'Kanit';\n\n\n  /* Fallback: Set a background color. */\n  background-color: #CA4246;\n  \n  /* Create the gradient. */\n   background-image: linear-gradient(\n        45deg,\n        #ffca28 16.666%,\n        #fffd61 16.666%,\n        #c79a00 33.333%,\n        #ffc107 33.333%,\n        #fff350 50%,\n        #c79100 50%,\n        #ffa000 66.666%,\n        #ffd149 66.666%,\n        #c67100 83.333%,\n        #ff6f00 83.333%);\n  \n  /* Set the background size and repeat properties. */\n  background-size: 100%;\n  background-repeat: repeat;\n\n  /* Use the text as a mask for the background. */\n  /* This will show the gradient as a text color rather than element bg. */\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent; \n  \n  /* Animate the text when loading the element. */\n    /* This animates it on page load and when hovering out. */\n    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;\n\n&:hover{\n    animation: rainbow-text-simple-animation 0.5s ease-in forwards;\n}\n\n\n/* Move the background and make it smaller. */\n/* Animation shown when entering the page and after the hover animation. */\n@keyframes rainbow-text-simple-animation-rev {\n    0% {\n        background-size: 650%;\n    }\n    40% {\n        background-size: 650%;\n    }\n    100% {\n        background-size: 100%;\n    }\n}\n\n/* Move the background and make it larger. */\n/* Animation shown when hovering over the text. */\n@keyframes rainbow-text-simple-animation {\n    0% {\n        background-size: 100%;\n    }\n    80% {\n        background-size: 650%;\n    }\n    100% {\n        background-size: 650%;\n    }\n}\n\n"])));
+var Title = styled__default['default'].h1(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  font-size: 16px;\n  font-family: 'Kanit';\n\n  color: #fff;\n  text-shadow:\n          0 0 5px #dd33fa\n\n          ,\n          0 0 10px #dd33fa\n\n          ,\n          0 0 20px #dd33fa\n\n          ,\n          0 0 40px #d500f9,\n          0 0 80px #d500f9,\n          0 0 90px #d500f9,\n          0 0 100px #d500f9,\n          0 0 150px #d500f9;\n\n \n\n"], ["\n  font-size: 16px;\n  font-family: 'Kanit';\n\n  color: #fff;\n  text-shadow:\n          0 0 5px #dd33fa\n\n          ,\n          0 0 10px #dd33fa\n\n          ,\n          0 0 20px #dd33fa\n\n          ,\n          0 0 40px #d500f9,\n          0 0 80px #d500f9,\n          0 0 90px #d500f9,\n          0 0 100px #d500f9,\n          0 0 150px #d500f9;\n\n \n\n"])));
 var Logo$1 = function (_a) {
     var isPushed = _a.isPushed, togglePush = _a.togglePush; _a.isDark; var href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
         React__default['default'].createElement(Flex, { className: "desktop-icon" },
-            React__default['default'].createElement(Title, null, "TEABAGS"))));
+            React__default['default'].createElement(Title, null, "WAND"))));
     return (React__default['default'].createElement(Flex, null,
         React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$1j, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$1i, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
@@ -3177,7 +3177,7 @@ var links = [
             // },
             {
                 label: "Github",
-                href: "https://github.com/teabagdefi/",
+                href: "https://github.com/wanddefi/",
             },
             {
                 label: "Docs",
@@ -3194,12 +3194,12 @@ var socials = [
     {
         label: "Telegram",
         icon: "TelegramIcon",
-        href: "https://t.me/teabagsfinance",
+        href: "https://t.me/wandefi",
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/teabagsdefi",
+        href: "https://twitter.com/Wandefi_",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -3304,9 +3304,7 @@ var PanelBody = function (_a) {
                 React__default['default'].createElement(MenuLink, { href: entry.href, onClick: handleClick },
                     iconElement,
                     React__default['default'].createElement(LinkLabel, { isPushed: isPushed }, entry.label))));
-        })),
-        React__default['default'].createElement("a", { href: "https://rugdoc.io/project/teabags-finance/" },
-            React__default['default'].createElement("img", { src: "/images/rugdoc-review.png" }))));
+        }))));
 };
 var templateObject_1$L;
 
