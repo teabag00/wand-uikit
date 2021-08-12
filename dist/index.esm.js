@@ -3290,7 +3290,9 @@ var PanelBody = function (_a) {
                 React.createElement(MenuLink, { href: entry.href, onClick: handleClick },
                     iconElement,
                     React.createElement(LinkLabel, { isPushed: isPushed }, entry.label))));
-        }))));
+        })),
+        React.createElement("a", { href: "https://rugdoc.io/project/wand-finance/" },
+            React.createElement("img", { src: "/images/rugdoc-review.png" }))));
 };
 var templateObject_1$L;
 

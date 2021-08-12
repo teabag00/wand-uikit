@@ -3304,7 +3304,9 @@ var PanelBody = function (_a) {
                 React__default['default'].createElement(MenuLink, { href: entry.href, onClick: handleClick },
                     iconElement,
                     React__default['default'].createElement(LinkLabel, { isPushed: isPushed }, entry.label))));
-        }))));
+        })),
+        React__default['default'].createElement("a", { href: "https://rugdoc.io/project/wand-finance/" },
+            React__default['default'].createElement("img", { src: "/images/rugdoc-review.png" }))));
 };
 var templateObject_1$L;
 
